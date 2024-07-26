@@ -1,0 +1,136 @@
+2024-07-26 18:29:09 | DEBUG    | asyncio.selector_events   | Using selector: EpollSelector
+2024-07-26 18:29:09 | INFO     | uvicorn.server            | Started server process [2738]
+2024-07-26 18:29:09 | INFO     | uvicorn.lifespan.on       | Waiting for application startup.
+2024-07-26 18:29:09 | INFO     | app.main                  | Starting up My webserver
+2024-07-26 18:29:09 | INFO     | uvicorn.lifespan.on       | Application startup complete.
+2024-07-26 18:29:09 | INFO     | uvicorn.server            | Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+2024-07-26 18:29:13 | DEBUG    | app.module1.services.service1_1 | Doing something in module1 service1, card: 1234-5678-9012-3456
+2024-07-26 18:29:13 | INFO     | app.module1.routers.endpoint1_1 | Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}
+2024-07-26 18:32:10 | INFO     | uvicorn.server            | Shutting down
+2024-07-26 18:32:10 | INFO     | uvicorn.lifespan.on       | Waiting for application shutdown.
+2024-07-26 18:32:10 | INFO     | app.main                  | Shutting down My webserver
+2024-07-26 18:32:10 | INFO     | uvicorn.lifespan.on       | Application shutdown complete.
+2024-07-26 18:32:10 | INFO     | uvicorn.server            | Finished server process [2738]
+{"timestamp": 1722011533.208911, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722011533.223962, "name": "uvicorn.server", "message": "Started server process [5581]", "level": "INFO"}
+{"timestamp": 1722011533.224854, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722011533.225555, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722011533.226327, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722011533.227424, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722011538.686267, "name": "app.module1.services.service1_1", "message": "<SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722011538.687268, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722011683.437028, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722011683.540208, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722011683.542285, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722011683.544478, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722011683.546666, "name": "uvicorn.server", "message": "Finished server process [5581]", "level": "INFO"}
+{"timestamp": 1722011807.156858, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722011807.176306, "name": "uvicorn.server", "message": "Started server process [9314]", "level": "INFO"}
+{"timestamp": 1722011807.177589, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722011807.178319, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722011807.178922, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722011807.179936, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722011809.865231, "name": "app.module1.services.service1_1", "message": "Doing something in module1 service1, card: <SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722011809.867362, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722011869.093518, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722011869.195012, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722011869.195645, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722011869.196262, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722011869.196756, "name": "uvicorn.server", "message": "Finished server process [9314]", "level": "INFO"}
+{"timestamp": 1722011870.368909, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722011870.385673, "name": "uvicorn.server", "message": "Started server process [10231]", "level": "INFO"}
+{"timestamp": 1722011870.386356, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722011870.387001, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722011870.387653, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722011870.388712, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722011874.372514, "name": "app.module1.services.service1_1", "message": "Doing something in module1 service1, card: <SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722011874.374265, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722011884.159748, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722011884.261018, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722011884.261745, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722011884.262367, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722011884.262918, "name": "uvicorn.server", "message": "Finished server process [10231]", "level": "INFO"}
+{"timestamp": 1722011886.248729, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722011886.273785, "name": "uvicorn.server", "message": "Started server process [10441]", "level": "INFO"}
+{"timestamp": 1722011886.274521, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722011886.275178, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722011886.275794, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722011886.276681, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722011948.506421, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722011948.610005, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722011948.612118, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722011948.614828, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722011948.616996, "name": "uvicorn.server", "message": "Finished server process [10441]", "level": "INFO"}
+{"timestamp": 1722011949.852897, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722011949.867165, "name": "uvicorn.server", "message": "Started server process [11295]", "level": "INFO"}
+{"timestamp": 1722011949.867815, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722011949.868412, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722011949.869045, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722011949.8699, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012094.778233, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012094.880396, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012094.881132, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012094.881842, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012094.882418, "name": "uvicorn.server", "message": "Finished server process [11295]", "level": "INFO"}
+{"timestamp": 1722012096.208751, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012096.224574, "name": "uvicorn.server", "message": "Started server process [13366]", "level": "INFO"}
+{"timestamp": 1722012096.225376, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722012096.225956, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722012096.226563, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722012096.227358, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012109.692983, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012109.795159, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012109.796779, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012109.798526, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012109.800195, "name": "uvicorn.server", "message": "Finished server process [13366]", "level": "INFO"}
+{"timestamp": 1722012114.585263, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012114.59974, "name": "uvicorn.server", "message": "Started server process [13582]", "level": "INFO"}
+{"timestamp": 1722012114.60058, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722012114.60139, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722012114.602159, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722012114.60293, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012151.884508, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012151.98605, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012151.986855, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012151.987529, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012151.988088, "name": "uvicorn.server", "message": "Finished server process [13582]", "level": "INFO"}
+{"timestamp": 1722012182.251547, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012182.266116, "name": "uvicorn.server", "message": "Started server process [14508]", "level": "INFO"}
+{"timestamp": 1722012182.266765, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722012182.267376, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722012182.268026, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722012182.268905, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012186.93284, "name": "app.module1.services.service1_1", "message": "Doing something in module1 service1, card: <SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722012186.933722, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722012240.073012, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012240.175855, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012240.176854, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012240.177861, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012240.178755, "name": "uvicorn.server", "message": "Finished server process [14508]", "level": "INFO"}
+{"timestamp": 1722012241.457848, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012241.45842, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012241.474043, "name": "uvicorn.server", "message": "Started server process [15367]", "level": "INFO"}
+{"timestamp": 1722012241.474769, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722012241.475429, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722012241.476055, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722012241.477877, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012248.987243, "name": "app.module1.services.service1_1", "message": "Doing something in module1 service1, card: <SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722012248.987993, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722012274.24685, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012274.350515, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012274.354494, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012274.357992, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012274.360912, "name": "uvicorn.server", "message": "Finished server process [15367]", "level": "INFO"}
+{"timestamp": 1722012485.736204, "name": "asyncio.selector_events", "message": "Using selector: EpollSelector", "level": "DEBUG"}
+{"timestamp": 1722012485.75087, "name": "uvicorn.server", "message": "Started server process [18696]", "level": "INFO"}
+{"timestamp": 1722012485.751657, "name": "uvicorn.lifespan.on", "message": "Waiting for application startup.", "level": "INFO"}
+{"timestamp": 1722012485.752434, "name": "app.main", "message": "Starting up My webserver", "level": "INFO"}
+{"timestamp": 1722012485.753169, "name": "uvicorn.lifespan.on", "message": "Application startup complete.", "level": "INFO"}
+{"timestamp": 1722012485.754008, "name": "uvicorn.server", "message": "Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)", "level": "INFO"}
+{"timestamp": 1722012491.79126, "name": "app.module1.services.service1_1", "message": "Doing something in module1 service1, card: <SENSITIVE>", "level": "DEBUG"}
+{"timestamp": 1722012491.791958, "name": "app.module1.routers.endpoint1_1", "message": "Module1 Endpoint1 result: {'result': 'Module1 Service1 action'}", "level": "INFO"}
+{"timestamp": 1722012497.114395, "name": "uvicorn.server", "message": "Shutting down", "level": "INFO"}
+{"timestamp": 1722012497.217615, "name": "uvicorn.lifespan.on", "message": "Waiting for application shutdown.", "level": "INFO"}
+{"timestamp": 1722012497.219658, "name": "app.main", "message": "Shutting down My webserver", "level": "INFO"}
+{"timestamp": 1722012497.221922, "name": "uvicorn.lifespan.on", "message": "Application shutdown complete.", "level": "INFO"}
+{"timestamp": 1722012497.223936, "name": "uvicorn.server", "message": "Finished server process [18696]", "level": "INFO"}

@@ -7,6 +7,7 @@ class Settings(BaseSettings):
   PORT: int
   LOG_LEVEL: str
   LOG_FILE: str
+  DEBUG_MODE: bool
 
   class Config:
     env_file = os.getenv("ENV_FILE", "local.env")

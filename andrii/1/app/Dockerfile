@@ -6,5 +6,5 @@ RUN npm ci; \
     npm prune --omit-dev
 
 
-FROM web-server:0.0.1 as runtime
+FROM web-server:0.0.2 as runtime
 COPY --from=builder /builder/build /usr/share/nginx/html

@@ -10,7 +10,6 @@ def main():
     parser.add_argument('commit_message', help='The commit message for the new commit.')
     args = parser.parse_args()
 
-
     try:
         # Open the repository
         try:

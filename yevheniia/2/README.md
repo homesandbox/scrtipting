@@ -33,7 +33,6 @@ terraform apply -var "ssh_public_key_path=~/.ssh/my_ssh_key.pub"
 
 Also, you can specify:
 - `ami_id` - Should be Ubuntu based.
-- `aws_region`
 - `instance_type`
 - `aws_region` 
 - `ssh_key_name`

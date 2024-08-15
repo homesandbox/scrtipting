@@ -13,4 +13,4 @@ Create VM using terraform
 Execute Ansible playbook
 `cd ansible`
 
-`ansible-playbook -i <tf.output.instance_public_ip>, replace_var_with_lvm.yml --extra-vars "ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/aws_ec2_ssh"`
+`ansible-playbook -i <tf.output.instance_public_ip>, replace_var_with_lvm.yml --extra-vars "ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/my_ansible_key"`

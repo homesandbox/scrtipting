@@ -22,7 +22,3 @@ variable "ami_id" {
   default     = "ami-0b0ea68c435eb488d" 
 }
 
-variable "disk_size_gb" {
-  description = "Size of the EBS volume in GB"
-  default     = 8
-}

@@ -47,7 +47,7 @@
         state: directory
         owner: elasticsearch
         group: elasticsearch
-        mode: '0644'
+        mode: '0755'
       loop:
         - /usr/share/elasticsearch/logs
         - /usr/share/elasticsearch/data

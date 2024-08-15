@@ -72,7 +72,7 @@ curl http:<tf.output.instance_public_ip>//:9200
 ```
 
 Result should be:
-![Elasticsearch works](./images/s1.PNG)
+![Elasticsearch works](./images/s1.png)
 
 If you faced problems during execution terraform of ansible feel free to contact 
 [support\@blablabla.com](mailto:hientran@clientdiary.com?subject=ElasticSearch)

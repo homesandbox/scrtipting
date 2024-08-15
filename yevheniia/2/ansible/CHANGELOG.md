@@ -7,11 +7,6 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Updated Elasticsearch configuration to use port 9201 instead of 9200.
 
-## [1.0.1] - 2024-08-14
-
-### Changed
-- Added missed config files
-
 ## [1.0.0] - 2024-08-14
 
 ### Initial Release

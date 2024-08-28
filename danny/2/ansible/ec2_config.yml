@@ -1,0 +1,96 @@
+---
+- name: EC2 Ubuntu Instance Configuration Playbook
+  hosts: all  
+  become: yes
+  vars:
+    authorized_keys_file: /home/{{ new_user }}/.ssh/authorized_keys
+    git_ssh_key_path: /home/{{ new_user }}/.ssh/id_ed25519
+  tasks:
+    - name: Update and upgrade the instance
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install necessary packages
+      apt:
+        name:
+          - sudo
+          - vim
+          - ufw
+          - git
+        state: present
+
+    - name: Disable root login via SSH
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+        state: present
+      notify:
+        - Restart SSH
+
+    - name: Add non-root user with sudo privileges
+      user:
+        name: "{{ new_user }}"
+        groups: sudo
+        create_home: yes
+        state: present
+
+    - name: Create .ssh directory for the new user
+      file:
+        path: /home/{{ new_user }}/.ssh
+        state: directory
+        owner: "{{ new_user }}"
+        group: "{{ new_user }}"
+        mode: '0700'
+
+    - name: Add public SSH key to the new user's authorized_keys
+      copy:
+        src: "{{ non_root_ssh_key_path }}"
+        dest: "{{ authorized_keys_file }}"
+        owner: "{{ new_user }}"
+        group: "{{ new_user }}"
+        mode: '0600'
+
+    - name: Ensure sudo group has no password prompt
+      lineinfile:
+        path: /etc/sudoers
+        regexp: '^%sudo'
+        line: '%sudo   ALL=(ALL:ALL) NOPASSWD:ALL'
+        state: present
+
+    - name: Ensure user can sudo without a password
+      lineinfile:
+        path: /etc/sudoers
+        regexp: '^{{ new_user }}'
+        line: '{{ new_user }}   ALL=(ALL:ALL) NOPASSWD:ALL'
+        state: present
+
+    - name: Generate SSH keypair for git
+      command: ssh-keygen -t ed25519 -f {{ git_ssh_key_path }} -N ""
+      become_user: "{{ new_user }}"
+
+    - name: Print the public SSH key
+      shell: cat {{ git_ssh_key_path }}.pub
+      become_user: "{{ new_user }}"
+      register: public_key_output
+
+    - name: Display the public SSH key
+      debug:
+        msg: "{{ public_key_output.stdout }}"
+
+    - name: Enable UFW and allow SSH
+      ufw:
+        rule: allow
+        port: '22'
+        proto: tcp
+
+    - name: Enable UFW firewall
+      ufw:
+        state: enabled
+
+  handlers:
+    - name: Restart SSH
+      service:
+        name: sshd
+        state: restarted

@@ -63,7 +63,7 @@ resource "aws_iam_instance_profile" "ssm_instance_profile" {
 }
 
 resource "aws_instance" "web_private" {
-  count         = 2
+  count         = var.instance_count
   ami           = "ami-0738e1a0d363b9c7e"
   instance_type = "t2.micro"
   subnet_id     = element([aws_subnet.private_subnet_az1.id, aws_subnet.private_subnet_az2.id], count.index % 2)

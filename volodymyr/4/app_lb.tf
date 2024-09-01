@@ -60,7 +60,7 @@ resource "aws_lb_listener" "app_lb_listener" {
 
 # Target Group Attachments
 resource "aws_lb_target_group_attachment" "app" {
-  count            = 3
+  count            = var.instance_count
   target_group_arn = aws_lb_target_group.app_tg.arn
   target_id        = element(aws_instance.web_private.*.id, count.index)
   port             = 80

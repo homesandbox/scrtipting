@@ -70,7 +70,7 @@ resource "aws_cloudwatch_metric_alarm" "low_cpu" {
 resource "aws_autoscaling_schedule" "scale_out_morning" {
   scheduled_action_name  = "scale-out-morning"
   min_size               = 3
-  max_size               = 3
+  max_size               = 6
   desired_capacity       = 3
   recurrence             = "0 9 * * 1-5" # Cron expression for 09:00 on weekdays
   autoscaling_group_name = aws_autoscaling_group.this.name
@@ -78,9 +78,9 @@ resource "aws_autoscaling_schedule" "scale_out_morning" {
 
 resource "aws_autoscaling_schedule" "scale_out_evening" {
   scheduled_action_name  = "scale-out-evening"
-  min_size               = 3
+  min_size               = 1
   max_size               = 3
-  desired_capacity       = 3
+  desired_capacity       = 1
   recurrence             = "0 18 * * 1-5" # Cron expression for 18:00 on weekdays
   autoscaling_group_name = aws_autoscaling_group.this.name
 }
